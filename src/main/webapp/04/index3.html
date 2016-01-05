@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单支持的样式</title>
+    <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    <form role="form">
+        <input type="text" class="form-group">
+        <textarea class="form-control" rows="5" >hello</textarea>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">吃
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">喝
+            </label>
+        </div>
+
+        <div class="radio">
+            <label>
+                <input name="optionsRadios" type="radio" checked>man
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input name="optionsRadios" type="radio" checked>women
+            </label>
+        </div>
+
+        <select  multiple class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+        </select>
+
+        <p class="form-control-static">输入以上信息</p>
+        <input class="form-control" type="text" placeholder="hello" disabled>
+
+        <div class="form-group has-success has-feedback">
+            <label>用户名</label>
+            <input class="form-control" type="text">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+        </div>
+        <div class="form-group has-warning">
+            <label>用户名</label>
+            <input class="form-control" type="text">
+        </div><div class="form-group has-error">
+        <label>用户名</label>
+        <input class="form-control" type="text">
+    </div>
+
+
+    </form>
+
+</body>
+</html>

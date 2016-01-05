@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#Home" data-toggle="tab">Home</a> </li>
+            <li><a href="#Pro" data-toggle="tab">Pro</a> </li>
+            <li class="dropdown">
+                <a href="#" id="myTabdrop1" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<span class="caret"></span> </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#drop1" tabindex="-1"data-toggle="tab">1</a> </li>
+                    <li><a href="#drop2" tabindex="-1"data-toggle="tab">2</a> </li>
+                    <li><a href="#drop3" tabindex="-1"data-toggle="tab">3</a> </li>
+                </ul>
+            </li>
+        </ul>
+        <div id="MyTabConent" class="tab-content">
+            <div class="tab-pane fade in active" id="Home">
+                <p>hello1</p>
+            </div>
+            <div class="tab-pane fade" id="Pro">
+                <p>hello2</p>
+            </div>
+            <div class="tab-pane fade" id="drop1">
+                <p>hello11</p>
+            </div>
+            <div class="tab-pane fade" id="drop2">
+                <p>hello12</p>
+            </div>
+            <div class="tab-pane fade" id="drop3">
+                <p>hello13</p>
+            </div>
+        </div>
+    </div>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+//    $("#myTab a:last").tab("show");
+//    $("#myTab a:eq(0) a").tab("show");
+    $('a[data-toggle="tab"]').on("shown.bs.tab",function(e){
+        alert("切换成功")
+    })
+</script>
+</body>
+</html>

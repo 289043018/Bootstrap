@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Collapse</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample">点击查看</a>
+        <div class="collapse" id="collapseExample">
+            <div class="well">
+                Hello
+            </div>
+        </div>
+        <div class="panel-group" id="accordion" role="tablist">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">item1</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel">
+                    <div class="panel-body">
+                        Hello1 welcome!
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">item2</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        Hello2 welcome!
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">item3</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        Hello3 welcome!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
